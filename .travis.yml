@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true kirito70/react-test npm test
 
 after_success:
-  - docker build -t kirito70/multi-client ./client
+  - docker build -t kirito70/multi-react-client ./client
   - docker build -t kirito70/multi-nginx ./nginx
   - docker build -t kirito70/multi-server ./server
   - docker build -t kirito70/multi-worker ./worker
@@ -17,7 +17,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   #Push image to docker hub
-  - docker push kirito70/multi-client
+  - docker push kirito70/multi-react-client
   - docker push kirito70/multi-nginx
   - docker push kirito70/multi-server
   - docker push kirito70/multi-worker
