@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="ProjectId" id="1i12B6kpwuyn6pOVDgxAcc5HUB0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601060640932</updated>
       <workItem from="1601060642680" duration="344000" />
-      <workItem from="1601060996802" duration="12014000" />
+      <workItem from="1601060996802" duration="17454000" />
     </task>
     <servers />
   </component>
@@ -49,9 +52,13 @@
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
     <state x="637" y="316" width="635" height="414" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1049/1920.0.1920.1080@0.0.1920.1049" timestamp="1601061721681" />
-    <state x="440" y="159" key="SettingsEditor" timestamp="1601134986498">
+    <state x="440" y="159" key="SettingsEditor" timestamp="1601142818284">
       <screen x="0" y="0" width="1920" height="1049" />
     </state>
-    <state x="440" y="159" key="SettingsEditor/0.0.1920.1049/1920.0.1920.1080@0.0.1920.1049" timestamp="1601134986498" />
+    <state x="440" y="159" key="SettingsEditor/0.0.1920.1049/1920.0.1920.1080@0.0.1920.1049" timestamp="1601142818284" />
+    <state x="684" y="430" width="542" height="187" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601138896066">
+      <screen x="0" y="0" width="1920" height="1049" />
+    </state>
+    <state x="684" y="430" width="542" height="187" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1049/1920.0.1920.1080@0.0.1920.1049" timestamp="1601138896066" />
   </component>
 </project>
