@@ -1,0 +1,23 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t kirito70/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run kirito70/react-test npm test -- --coverage
+
+after_success:
+  - docker build -t kirito70/multi-client ./client
+  - docker build -t kirito70/multi-nginx ./nginx
+  - docker build -t kirito70/multi-server ./server
+  - docker build -t kirito70/multi-worker ./worker
+  #Login to Docker cli
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+  #Push image to docker hub
+  - docker push kirito70/multi-client
+  - docker push kirito70/multi-nginx
+  - docker push kirito70/multi-server
+  - docker push kirito70/multi-worker
