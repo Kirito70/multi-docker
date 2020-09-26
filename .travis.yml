@@ -6,7 +6,7 @@ before_install:
   - docker build -t kirito70/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run kirito70/react-test npm test -- --coverage
+  - docker run -e CI=true kirito70/react-test npm test
 
 after_success:
   - docker build -t kirito70/multi-client ./client
